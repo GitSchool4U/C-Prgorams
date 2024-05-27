@@ -3,8 +3,8 @@
 
 int main()
 {
-    int num1;
-    float num2;
+    int num1 = 2;
+    float num2 = 1.4;
     int intResult;
     float floatResult;
 
