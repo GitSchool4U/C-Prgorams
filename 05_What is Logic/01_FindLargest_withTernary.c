@@ -1,4 +1,4 @@
-// SelfWork --> Program to find largest among 3 numbers using ternary operator.
+// SelfWork Discussion --> Program to find largest among 3 numbers using ternary operator.
 
 #include <stdio.h>
 

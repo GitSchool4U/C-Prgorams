@@ -1,4 +1,5 @@
-// Interview Question
+// Suggest Output
+
 #include <stdio.h>
 
 int main()

@@ -1,4 +1,5 @@
-// Give Anwers of all outputs given below
+// Suggest all outputs given below 
+
 #include <stdio.h>
 
 int main()
