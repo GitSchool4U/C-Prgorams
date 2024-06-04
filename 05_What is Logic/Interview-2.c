@@ -1,3 +1,5 @@
+// suggest output
+
 #include <stdio.h>
 
 int main()

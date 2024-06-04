@@ -1,3 +1,10 @@
+// Write a Program to create menu and give choice to user to select and perform task on the basis of user selection
+// menu are as follows:
+// check even or odd
+// find largest of three numbers
+// check leap year
+
+
 #include <stdio.h>
 
 int main()

@@ -14,7 +14,6 @@ void main()
         if (n % i == 0)
         {
             printf("Number is not Prime");
-            getch();
             break;
         }
     }
