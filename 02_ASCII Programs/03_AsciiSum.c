@@ -1,4 +1,4 @@
-// take two character values from user and sum of its ascii value and print the resultant character.
+// take two character values from user and print sum of those characters
 
 #include <stdio.h>
 

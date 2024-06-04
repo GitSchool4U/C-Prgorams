@@ -1,4 +1,4 @@
-// handle the special case of division and show error if occurs.
+// Write a program to divide two numbers and handle the special case of division and show error if occurs.
 #include <stdio.h>
 
 int main()

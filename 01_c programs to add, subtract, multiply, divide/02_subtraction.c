@@ -1,4 +1,4 @@
-// subtract two values in which 1st value is of integer type and the value which is goint to be subtract is of float type, calculate its result in float type.
+// subtract two values in which 1st value is of integer type and the value which is going to be subtract is of float type, calculate its result in float type.
 #include <stdio.h>
 
 int main()
