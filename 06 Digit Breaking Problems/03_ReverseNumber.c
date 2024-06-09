@@ -4,7 +4,7 @@
 
 int main()
 {
-    int num, a, b, c, d, rNum=0;
+    int num, a, b, c, d, rNum = 0;
     printf("Enter 4 digit numbers : ");
     scanf("%d", &num);
 
@@ -16,18 +16,20 @@ int main()
 
     a = num % 10;
     num = num / 10;
-    rNum = rNum*10 + a;
+    rNum = rNum * 10 + a;
 
     b = num % 10;
     num = num / 10;
-    rNum = rNum*10 + b;
+    rNum = rNum * 10 + b;
 
     c = num % 10;
     num = num / 10;
-    rNum = rNum*10 + c;
+    rNum = rNum * 10 + c;
 
     d = num % 10;
-    rNum = rNum*10 + d;
+    rNum = rNum * 10 + d;
+
+    // rNum = d * 1000 + c * 100 + b * 10 + a; //You can also do this insdead of above rNum calculations.
 
     printf("Sum of digits : %d", rNum);
 
