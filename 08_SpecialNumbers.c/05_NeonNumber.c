@@ -1,22 +1,24 @@
 // Program to check whether the number is neon number or not.
+// A neon number is a number where the sum of digits of square of the number is equal to the number.
+// For example if the input number is 9, its square is 9*9 = 81 and sum of the digits is 9.
 
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+
 void main()
 {
-    int n, sq, i, sum = 0;
-    clrscr();
+    int num, numcpy, sq, sum = 0;
+
     printf("Enter the number : ");
-    scanf("%d", &n);
+    scanf("%d", &num);
 
-    sq = n * n;
+    numcpy = num;
+    sq = num * num;
 
-    for (i = sq; i > 0; i = i / 10)
-        sum = sum + i % 10;
+    for (num = sq; num > 0; num = num / 10)
+        sum = sum + num % 10;
 
-    if (sum == n)
-        printf("%d is a neon number.", n);
+    if (sum == numcpy)
+        printf("%d is a neon number.", numcpy);
     else
-        printf("%d is not a neon number.", n);
-    getch();
+        printf("%d is not a neon number.", numcpy);
 }

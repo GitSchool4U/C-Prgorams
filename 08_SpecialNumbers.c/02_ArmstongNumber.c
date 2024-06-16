@@ -1,28 +1,33 @@
 // Program to take a number from user and check whether it is Armstrong number or not .
+// Armstrong number is a number that is equal to the sum of cubes of its digits.
+// For example 0, 1, 153, 370, 371 and 407 are the Armstrong numbers.
 
 #include <stdio.h>
-#include <conio.h>
+#include <math.h>
 
-void main()
+int main()
 {
-    int i = 2, temp, rem, sum = 0, n;
-    clrscr();
+    int num, numcpy, digit, sum = 0;
 
-    printf("Enter n : ");
-    scanf("%d", &n);
-    temp = n;
+    printf("Enter number : ");
+    scanf("%d", &num);
 
-    while (n > 0)
+    numcpy = num;
+
+    while (num != 0)
     {
-        rem = n % 10;
-        sum = sum + (rem * rem * rem);
-        n = n / 10;
+        digit = num % 10;
+        num = num / 10;
+        sum = sum + pow(digit, 3);
+    }
+    if (sum == numcpy)
+    {
+        printf("Armstrong number");
+    }
+    else
+    {
+        printf("Not Armstrong number");
     }
 
-    if (temp == sum)
-        printf("Entered number is an Armstrong Number");
-    else
-        printf("Entered number is not an Armstrong Number");
-
-    getch();
+    return 0;
 }
