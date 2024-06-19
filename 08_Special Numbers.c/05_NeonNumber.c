@@ -14,8 +14,8 @@ void main()
     numcpy = num;
     sq = num * num;
 
-    for (num = sq; num > 0; num = num / 10)
-        sum = sum + num % 10;
+    for (int i = sq; i > 0; i = i / 10)
+        sum = sum + i % 10;
 
     if (sum == numcpy)
         printf("%d is a neon number.", numcpy);
