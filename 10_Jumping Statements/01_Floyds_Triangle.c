@@ -1,6 +1,6 @@
 /*
 
-    Floyd's Triangle
+    Self Work Discussion: Floyd's Triangle
 
     1
     2 3
