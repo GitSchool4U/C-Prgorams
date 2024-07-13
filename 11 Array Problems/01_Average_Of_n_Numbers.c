@@ -4,30 +4,37 @@
 
 int main()
 {
-    int n, i;
-    float sum = 0.0, average;
+    int n;
+    float sum = 0, average;
 
-    printf("How many numbers do you want to use to calculate the average? \n");
+    printf("Kitne numbers ka sum aur average nikalna hai? \n");
     scanf("%d", &n);
 
-    int arr[n];
+    float arr[n];
 
     // Reading elements of the array
     printf("Enter numbers:\n");
-    for (i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        scanf("%d", &arr[i]);
+        scanf("%f", &arr[i]);
+    }
+
+    // Print array
+    printf("Your given numbers are:\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("%.2f\t", arr[i]);
     }
 
     // sum of elements of array
-    for (i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         sum += arr[i];
     }
 
     average = sum / n;
-    printf("Sum of array elements: %.2f\n", sum);
-    printf("Average of array elements: %.2f\n", average);
+    printf("\nSum of array elements: %.2f", sum);
+    printf("\nAverage of array elements: %.2f", average);
 
     return 0;
 }
