@@ -1,4 +1,5 @@
-// Program to merge two arrays.
+// SELF-WORK :  Program to merge two arrays.
+
 #include <stdio.h>
 
 int main()

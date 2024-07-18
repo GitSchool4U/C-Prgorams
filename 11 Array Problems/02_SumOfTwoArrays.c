@@ -4,40 +4,48 @@
 
 int main()
 {
-    int n, i;
+    int n;
 
-    printf("Enter the number of elements in the arrays: ");
+    printf("Apko array ka size kitna chahiye \n");
     scanf("%d", &n);
 
-    int arr1[n], arr2[n], sumArr[n];
+    int arr1[n], arr2[n];
+    int arr3[n];
 
-    // Reading elements of the first array
-    printf("Enter the elements of the first array:\n");
-    for (i = 0; i < n; i++)
+    printf("Krpya pahle array me numbers daliye:\n");
+    for (int i = 0; i < n; i++)
     {
         scanf("%d", &arr1[i]);
     }
 
-    // Reading elements of the second array
-    printf("Enter the elements of the second array:\n");
-    for (i = 0; i < n; i++)
+    printf("Krpya dusre array me numbers daliye:\n");
+    for (int i = 0; i < n; i++)
     {
         scanf("%d", &arr2[i]);
     }
 
-    // Calculating the sum of corresponding elements
-    for (i = 0; i < n; i++)
+    printf("Ye rhe apke dono arrays:\n");
+    for (int i = 0; i < n; i++)
     {
-        sumArr[i] = arr1[i] + arr2[i];
-    }
-
-    // Printing the resulting sum array
-    printf("The resulting array with the sum of corresponding elements is:\n");
-    for (i = 0; i < n; i++)
-    {
-        printf("%d ", sumArr[i]);
+        printf("%d  ", arr1[i]);
     }
     printf("\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d  ", arr2[i]);
+    }
+
+    // 2 array ko sum karne ka logic👇
+    for (int i = 0; i < n; i++)
+    {
+        arr3[i] = arr1[i] + arr2[i];
+    }
+
+    printf("\nye rha apka sum kiya hua array: \n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d   ", arr3[i]);
+    }
 
     return 0;
 }

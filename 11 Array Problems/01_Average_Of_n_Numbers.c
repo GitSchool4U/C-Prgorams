@@ -4,37 +4,36 @@
 
 int main()
 {
-    int n;
-    float sum = 0, average;
+    int n, sum = 0;
+    float avg;
 
-    printf("Kitne numbers ka sum aur average nikalna hai? \n");
+    printf("Apko kitne number ka sum and average karana hai? \n");
     scanf("%d", &n);
 
-    float arr[n];
+    int arr[n];
 
-    // Reading elements of the array
-    printf("Enter numbers:\n");
+    printf("Krpya apne numbers ko yha daliye:\n");
     for (int i = 0; i < n; i++)
     {
-        scanf("%f", &arr[i]);
+        scanf("%d", &arr[i]);
     }
 
-    // Print array
-    printf("Your given numbers are:\n");
+    printf("Ye rhe apke numbers:\n");
     for (int i = 0; i < n; i++)
     {
-        printf("%.2f\t", arr[i]);
+        printf("%d  ", arr[i]);
     }
 
-    // sum of elements of array
+    // sum karne ka logic👇
     for (int i = 0; i < n; i++)
     {
         sum += arr[i];
     }
 
-    average = sum / n;
-    printf("\nSum of array elements: %.2f", sum);
-    printf("\nAverage of array elements: %.2f", average);
+    avg = sum / n;
+
+    printf("\nSum : %d", sum);
+    printf("\nAverage: %.2f", avg);
 
     return 0;
 }

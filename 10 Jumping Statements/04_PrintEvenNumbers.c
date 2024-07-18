@@ -8,7 +8,7 @@ int main()
     for (int i = 1; i <= 10; i++)
     {
         // Check if the number is even
-        if (i % 2 == 0)
+        if (i % 2 != 0)
         {
             // Skip the rest of the code in this loop iteration for even numbers
             continue;
